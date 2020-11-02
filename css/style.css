@@ -1,3 +1,24 @@
+/* start add local fonts */
+@font-face{
+    font-family: 'raleway';
+    src: url(../font/*);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'raleway';
+    src: url(../font/*);
+    font-weight: 500;
+    font-style: normal;
+}
+@cfont-face{
+    font-family: 'montserat';
+    src: url('../fonts/montserat');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* end add local fonts */
 body{
     margin: 0;
 }
