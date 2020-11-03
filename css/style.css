@@ -148,12 +148,14 @@ body{
     border: 0;
     margin: 55px 0 0 0;
     cursor: pointer;
+    color: transparent;
 }
 .page-header-top-search input[type="search"]:focus {
     width: 200px;
     transition: width 1s ease-out;
     background-position: right;
-    border: 1px solid brown;
+    border: 1px solid #c7b299;
+    background-color: #8c8c8c;
     color: #fff;
     font-family: 'montserrat', sans-serif;
     font-weight: 300;
@@ -161,7 +163,18 @@ body{
     font-size: 14px;
     padding: 2px 26px 2px 4px;
     border-radius: 3px;
-  }
+}input[type="search"]::-webkit-input-placeholder{
+    color:transparent;
+}
+input[type="search"]:focus::-webkit-search-cancel-button{
+    display: none;
+}
+input[type="search"]::-webkit-search-cancel-button{
+    display: none;
+} 
+input[type="search"]:focus::-webkit-input-placeholder{
+      color:#fff;
+}
   .page-header-bottom-carusel{
     width: 1620px;
     min-height: 600px;
