@@ -78,10 +78,10 @@ body{
     color: #c7b299;
 }
 .page-header-top-link:active .page-header-top-link-logo {
-    fill: gold;
+    fill:  #736357;
 }
 .page-header-top-link:active .page-header-top-link-logo-txt {
-    color: gold;
+    color:  #736357;
 }
 .page-header-top-link-logo {
   fill: CurrentColor;
@@ -111,7 +111,7 @@ body{
     color: #c7b299;
 }
 .page-header-top-navbar-menu-link:active{
-    color: gold;
+    color:  #736357;
 }
 .page-header-top-button-cart{
     border: 0;
@@ -131,7 +131,7 @@ body{
     border: 0; 
 }
 .page-header-top-button-cart-img:active{
-    fill: gold;  
+    fill:  #736357;  
 }
 .page-header-top-button-cart:focus, .page-main-projects-nav-item:focus{
       outline: none;
@@ -212,8 +212,8 @@ input[type="search"]:focus::-webkit-input-placeholder{
 }
 .page-header-bottom-carusel-slide:nth-of-type(1):active,
 .page-header-bottom-carusel-slide:nth-of-type(2):active{
-    border-top: 2px solid gold;
-    border-right: 2px solid gold;
+    border-top: 2px solid  #736357;
+    border-right: 2px solid  #736357;
 }
 .page-header-bottom-carusel-slide:nth-of-type(2){
     transform: rotate(45deg);
@@ -293,7 +293,7 @@ input[type="search"]:focus::-webkit-input-placeholder{
     color: #fff;
     -ms-word-break: break-all;
     word-break: break-all;
-    font-family: "raleway", sans-serif;
+    font-family: 'raleway', sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 23px;
@@ -362,6 +362,10 @@ input[type="search"]:focus::-webkit-input-placeholder{
     height: 3px;
     background-color: #f1eee9;
 }
+.page-main-features-menu-icon{
+    display: block;
+    height: 49px;
+}
 .page-main-features-menu:hover .page-main-features-menu-icon {
     fill: #c7b299;
 }
@@ -389,7 +393,7 @@ input[type="search"]:focus::-webkit-input-placeholder{
     padding: 0 0 19px 0;
     box-sizing: border-box;
     text-align: center;
-    font-family: Raleway;
+    font-family: 'raleway', sans-serif;
     font-size: 22px;
     font-weight: 600;
     font-stretch: normal;
@@ -454,6 +458,9 @@ input[type="search"]:focus::-webkit-input-placeholder{
     width: 770px;
     height: 400px;
 }
+.page-main-landscape-photo-realization-photo-item:first-child:hover{
+    z-index: 3;
+}
 .page-main-landscape-photo-realization-photo-item:nth-child(2) {
     margin: 0 auto;
     z-index: 2;
@@ -467,6 +474,9 @@ input[type="search"]:focus::-webkit-input-placeholder{
     z-index: 1;
     width: 770px;
     height: 400px;
+}
+.page-main-landscape-photo-realization-photo-item:last-child:hover {
+    z-index: 3;
 }
 .page-main-multipurpose{
     width: 100%;
