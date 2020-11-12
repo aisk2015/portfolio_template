@@ -137,33 +137,48 @@ body{
       outline: none;
       padding: 0;
 }
+.page-header-top-search{
+    position: relative;
+}
+.page-header-top-search-label{
+    display: block;
+    margin: 55px 0 0 0;
+    padding: 0;
+    fill: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.page-header-top-search-label:hover{
+    fill: #c7b299;
+}
+.page-header-top-search-label:active{
+    fill: #736357;
+}
 .page-header-top-search input[type="search"]{
     width: 24px;
     height: 24px;
     outline: none;
-    background-image: url("../img/search.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
     background-color: transparent;
     border: 0;
-    margin: 55px 0 0 0;
+    margin: 0;
     cursor: pointer;
     color: transparent;
+    position: absolute;
+    right: 1px;
 }
 .page-header-top-search input[type="search"]:focus {
     width: 200px;
     transition: width 1s ease-out;
-    background-position: right;
-    border: 1px solid #c7b299;
-    background-color: #8c8c8c;
+    border-bottom: 1px solid #c7b299;
     color: #fff;
     font-family: 'montserrat', sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 14px;
     padding: 2px 26px 2px 4px;
-    border-radius: 3px;
-}input[type="search"]::-webkit-input-placeholder{
+    border-radius: none;
+}
+input[type="search"]::-webkit-input-placeholder{
     color:transparent;
 }
 input[type="search"]:focus::-webkit-search-cancel-button{
@@ -726,10 +741,19 @@ input[type="search"]:focus::-webkit-input-placeholder{
 }
 .page-main-projects-article-btn-link {
     left: 144px;
+    cursor: pointer;
 }
 .page-main-projects-article-btn-search {
     right: 146px;
+    cursor: pointer;
 }
+.page-main-projects-article:hover .page-main-projects-article-btn-ico:active{
+    fill:  #736357;
+}
+.page-main-projects-article-btn-search:focus, .page-main-projects-article-btn-link:focus {
+    outline: none;
+}
+
 .page-main-projects-article-link{
     margin: 0 auto;
 }
