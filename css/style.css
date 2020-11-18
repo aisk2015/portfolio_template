@@ -345,14 +345,14 @@ input[type="search"]:focus::-webkit-input-placeholder{
     text-transform: uppercase;
 }
 .page-header-bottom-carusel-button:hover, .page-main-projects-article-link:hover{
-    background-color: #362f2d;
-    color: #736357;
-    border-color: #3a312f;
-}
-.page-header-bottom-carusel-button:active, .page-main-projects-article-link:active {
     background-color: #736357;
     color: #fff;
     border-color: #736357;
+}
+.page-header-bottom-carusel-button:active, .page-main-projects-article-link:active {
+    background-color: #362f2d;
+    color: #736357;
+    border-color: #3a312f;
 }
 .page-header-bottom-carusel-pagination{
     width: 100%;
