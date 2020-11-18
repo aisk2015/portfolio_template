@@ -25,10 +25,26 @@
 }
 @font-face{
     font-family: 'raleway';
+    src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bold-webfont.woff') format('woff'),
+         url('../fonts/raleway-bold-webfont.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'raleway';
     src: url('../fonts/raleway-extrabold-webfont.woff2') format('woff2'),
          url('../fonts/raleway-extrabold-webfont.woff') format('woff'),
          url('../fonts/raleway-extrabold.ttf') format('ttf');
     font-weight: 800;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'montserrat';
+    src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff'),
+         url('../fonts/montserrat-regular-webfont.ttf') format('ttf');
+    font-weight: 400;
     font-style: normal;
 }
 @font-face{
@@ -1196,27 +1212,17 @@ input[type="search"]:focus::-webkit-input-placeholder{
     left: 0;
 }
 .page-main-posts-article-btn{
+    display: block;
+    box-sizing: border-box;
     width: 22px;
     height: 22px;
     background-color: transparent;
-    border: 1px solid #c7b299;
-    border-radius: 50%;
+    border: none;
     position: relative;
     cursor: pointer;
 }
-.page-main-posts-article-btn:before{
-    content: "";
-    display: block;
-    width: 7px;
-    height: 7px;
-    border-top: 1px solid #c7b299;
-    border-right: 1px solid #c7b299;
-    position: absolute;
-    transform: rotate(45deg);
-    position: absolute;
-    box-sizing: border-box;
-    top: 7px;
-    left: 5px;
+.page-main-posts-article-btn-ico{
+    fill: #c7b299;
 }
 .page-main-posts-article-btn:focus{
     outline: none;
@@ -1224,26 +1230,12 @@ input[type="search"]:focus::-webkit-input-placeholder{
 .page-main-posts-article-btn:nth-child(4){
     margin: 0 8px 0 0;
 }
-.page-main-posts-article-btn:nth-child(4):before{
-    border-top: 1px solid #c7b299;
-    border-right: 1px solid #c7b299;
-    position: absolute;
-    transform: rotate(-135deg);
-    left: 8px;
+
+.page-main-posts-article-btn-ico:hover{
+    fill:  #d1d1d1;
 }
-.page-main-posts-article-btn:hover{
-    border: 1px solid #d1d1d1;
-}
-.page-main-posts-article-btn:hover:before{
-    border-color: #d1d1d1;
-    border-color: #d1d1d1;
-}
-.page-main-posts-article-btn:active{
-    border: 1px solid gray;
-}
-.page-main-posts-article-btn:active:before{
-    border-color: gray;
-    border-color: gray;
+.page-main-posts-article-btn-ico:active{
+    fill: gray;
 }
 /* section customers */
 .page-main-customers{
@@ -1261,4 +1253,161 @@ input[type="search"]:focus::-webkit-input-placeholder{
 .page-main-customers-logo{
     padding: 0;
     margin: 0 0 0 90px;
+    filter: brightness(60%);
+}
+.page-main-customers-logo:hover{
+    filter: brightness(100%);
+}
+.page-main-customers-logo:active{
+    filter: brightness(60%);
+}
+/* section footer */
+.page-footer{
+    background-color: #191919;
+    box-sizing: border-box;
+    padding: 80px 0 80px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.page-footer-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+.page-footer-items:nth-child(1){
+    width: 258px;
+    display: block;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 42px 0 0;
+}
+.page-footer-items:nth-child(2){
+    width: 262px;
+    display: block;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.page-header-top-link.margin{
+    margin:0 0 29px 0;
+    padding: 0;
+}
+.page-footer-items-paragraph{
+    font-family: 'montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #555555;
+    padding: 0 0 33px 0;
+    margin: 0;
+}
+
+.color{
+    font-family: 'montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #d1d1d1;
+}
+.color:hover{
+    color:#fff;
+}
+.color:active{
+    color:#555555;
+}
+.color .arrow{
+    display: block;
+    box-sizing: border-box;
+    width: 0;
+	height: 0;
+	border-top: 4px solid transparent;
+	border-left: 5px solid #d1d1d1;
+    border-bottom: 4px solid transparent;
+    position: absolute;
+    top:6px;
+    left:83px; 
+}
+.color:hover .arrow{
+    border-left: 5px solid #fff;
+}
+.color:active .arrow{
+    border-left: 5px solid #555555;
+}
+.page-footer-items-txt{
+    padding: 29px 0 33px 0;
+    margin: 0;
+}
+.page-footer-items-link{
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 19px 0 0 0;
+    margin: 0;
+}
+.page-footer-items-link:after{
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #252525;
+    padding: 0 0 21px 0;
+}
+.page-footer-items-link:last-child:after{
+    border: none;
+}
+.page-footer-items-title{
+    font-family: 'raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    padding: 28px 0 14px 0;
+    margin: 0;
+}
+.page-footer-items-date{
+    display: block;
+    font-family: 'montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: #363636;
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+.page-footer-items-txt{
+    font-family: 'montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #555555;
+}
+.page-footer-items-link:hover .page-footer-items-date{
+    color: #fff;
+}
+.page-footer-items-link:hover .page-footer-items-txt{
+    color: #c7b299;
+}
+.page-footer-items-link:active .page-footer-items-date{
+   color: grey; 
+}
+.page-footer-items-link:active .page-footer-items-txt{
+    color: #736357; 
 }
