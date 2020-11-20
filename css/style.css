@@ -1516,3 +1516,92 @@ input[type="search"]:focus::-webkit-input-placeholder{
     color:#959595;
     margin: 0 8px 0 0;
 }
+/*  media for mobile devices width 576px */
+@media (max-width:576px){
+    .container{
+        width:576px;
+    }
+    .page-header{
+        padding: 0;
+        min-height: 100%;
+    }
+    .page-header-top{
+        width:100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .page-header-top-link{
+        margin: 20px 0 20px 20px;
+    }
+    .page-header-bottom-carusel{
+        display: none;
+    }
+    .page-header-top-navbar-top-menu{
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .page-header-top-navbar-menu-link{
+        width:100%;
+    }
+    .page-header-top-button-cart{
+        margin: 0 0 0 20px;
+        padding: 0;
+    }
+    .page-header-top-search{
+        margin: 0 20px 0 0;
+        padding: 0;
+    }
+    .page-header-top-search-label{
+        margin: 0;
+        padding: 0;
+    }
+    .page-main-features{
+        margin: 0;
+        padding: 0 20px;
+        flex-wrap: wrap;
+    }
+    .page-main-features-menu{
+        margin: 20px auto;
+    }
+    .page-main-landscape-photo-realization{
+        padding: 20px;
+    }
+    .page-main-landscape-photo-realization-txt{
+        width:100%;
+        padding-bottom:20px;
+    }
+    .page-main-landscape-photo-realization-photo{
+        display: none;
+    }
+    .page-main-multipurpose{
+        display: none;
+    }
+    .page-main-projects{
+        padding: 0;
+    }
+    .page-main-projects-title{
+        padding:20px 0 20px 0;
+    }
+    .page-main-projects-txt{
+        width:100%;
+        padding: 0 20px 20px 20px;
+    }
+    .page-main-projects-nav{
+        display: none;
+    }
+    .page-main-projects-wrap{
+        width:100%;
+        padding: 0;
+    }
+    .page-main-projects-article{
+        margin: 0 0 20px 0;
+    }
+    .page-main-projects-article-link{
+        margin:20px auto 0 auto;
+    }
+    .page-main-video{
+        display: none;
+    }
+}
