@@ -128,6 +128,8 @@ body{
     margin:60px 63px 0 0;
     padding: 0;
     width: 637px;
+}
+.page-header-top-navbar-top-menu-button-nav{
     display: flex;
     justify-content: space-between;
 }
@@ -145,6 +147,9 @@ body{
 .page-header-top-navbar-menu-link:active{
     color:  #736357;
 }
+#page-header-top-navbar-top-menu-button {
+    display: none;
+  }
 .page-header-top-button-cart{
     border: 0;
     border-radius: 0;
@@ -1519,31 +1524,69 @@ input[type="search"]:focus::-webkit-input-placeholder{
 /*  media for mobile devices width 576px */
 @media (max-width:576px){
     .container{
-        width:576px;
+        width:100%;
     }
     .page-header{
         padding: 0;
-        min-height: 100%;
+        min-height: auto;
+        background-size: initial;
     }
     .page-header-top{
         width:100%;
-        flex-wrap: wrap;
         justify-content: space-between;
     }
     .page-header-top-link{
         margin: 20px 0 20px 20px;
     }
-    .page-header-bottom-carusel{
-        display: none;
-    }
+/* mobile menu start */
     .page-header-top-navbar-top-menu{
         flex-wrap: wrap;
-        margin: 0;
+        margin: 20px 0 0 0;
         padding: 0;
+        width:80px;
+        position: relative;
+    }
+    .page-header-top-navbar-top-menu-button {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        background-image:  url('https://cdn3.iconfinder.com/data/icons/mobile-friendly-ui/100/menu-128.png');
+        background-size: 100%;
+      }
+    .page-header-top-navbar-top-menu-button-nav{
+        visibility: hidden;
+        margin: 0 auto;
+        height: 0;
+        width: 0;
+        flex-direction: column;
+        border: 1px solid black;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
         width: 100%;
     }
-    .page-header-top-navbar-menu-link{
-        width:100%;
+    .page-header-top-navbar-menu-link {
+        min-height: 40px;
+        text-align: center;
+        background-color: #ccc;
+        margin-top: 2px;
+    }
+    input[type="checkbox"]:checked ~ .page-header-top-navbar-top-menu-button-nav {
+        visibility: visible;
+        height: auto;
+        width: 100%;
+        display: block;
+        position: absolute;
+        right: 300px;
+    }
+/* mobile menu end */
+    .page-header-top-button-cart, .page-header-top-search{
+        display: none;
+    }
+    .page-header-bottom-carusel{
+        display: none;
     }
     .page-header-top-button-cart{
         margin: 0 0 0 20px;
@@ -1579,14 +1622,15 @@ input[type="search"]:focus::-webkit-input-placeholder{
         display: none;
     }
     .page-main-projects{
-        padding: 0;
+        padding: 0 20px 0 20px;
     }
     .page-main-projects-title{
         padding:20px 0 20px 0;
     }
     .page-main-projects-txt{
         width:100%;
-        padding: 0 20px 20px 20px;
+        padding: 0;
+        margin: 0;
     }
     .page-main-projects-nav{
         display: none;
@@ -1603,5 +1647,80 @@ input[type="search"]:focus::-webkit-input-placeholder{
     }
     .page-main-video{
         display: none;
+    }
+    .page-main-devices{
+        padding: 20px 0 0 0;
+        position: relative;
+    }
+    .page-main-devices-img{
+        display: none;
+    }
+    .page-main-devices-excellent{
+        width: 100%;
+        margin: 0;
+        background-image: url("../img/iphone_in_hand.png");
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: 65% auto;
+    }
+    .page-main-devices-excellent-title{
+        padding: 0;
+        text-align: center;
+    }
+    .page-main-devices-excellent-txt{
+        padding: 20px;
+    }
+    .page-main-devices-excellent-list{
+        width:40%;
+        align-self: flex-end;
+        padding: 0;
+        margin: 0 0 220px 55%;
+    }
+    .page-main-devices-excellent-list-item{
+        padding: 0 0 0 30px;
+        font-size: 14px;
+    }
+    .page-main-statistics{
+        display: none;
+    }
+    .page-main-posts{
+        padding: 20px;
+    }
+    .page-main-posts-title{
+        padding: 0;
+        margin: 0;
+    }
+    .page-main-posts-article{
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .page-main-posts-article-items{
+        margin: 0 0 20px 0;
+    }
+    .page-main-posts-article-items:nth-child(2){
+        margin: 0 0 20px 0;
+    }
+    .page-main-customers{
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+    .page-main-customers-logo{
+        width: 70%;
+        height: auto;
+        margin: 20px 10px 20px 10px;
+    }
+    .page-footer-content{
+        display: none;
+    }
+    .page-footer-bottom{
+        flex-wrap: wrap;
+        padding: 20px 0 20px 0;
+    }
+    .page-footer-bottom-rights{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        padding: 0 0 10px 0;
     }
 }
