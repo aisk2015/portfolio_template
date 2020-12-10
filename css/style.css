@@ -984,9 +984,9 @@ input[type="search"]:focus::-webkit-input-placeholder{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /* width:132px; */
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 .page-main-statistics-items:after{
     content: "";
@@ -1034,6 +1034,19 @@ input[type="search"]:focus::-webkit-input-placeholder{
 }
 .page-main-statistics-items:nth-child(5) svg{
     width: 54px;
+}
+.page-main-statistics-items:hover .page-main-statistics-items-count{
+    transform: scale(1.2);
+    -webkit-transform: scale1.(1.2);
+    -o-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.page-main-statistics-items:hover:after {
+    transition: width 1s ease-out;
+    min-width: 30px;
+    width: 50%;
 }
 /* section posts */
 .page-main-posts{
@@ -1174,9 +1187,14 @@ input[type="search"]:focus::-webkit-input-placeholder{
     top:4px;
     left:83px; 
 }
-
+.page-main-posts-article-items-link:hover{
+    color: #e9c79a;
+}
 .page-main-posts-article-items-link:active{
     color: #d1d1d1;
+}
+.page-main-posts-article-items-link:hover .arrow{
+    border-left:5px solid #e9c79a;
 }
 .page-main-posts-article-items-link:active .arrow{
     border-left:5px solid #d1d1d1;
@@ -1708,6 +1726,7 @@ input[type="search"]:focus::-webkit-input-placeholder{
     .page-main-devices{
         padding: 20px 0 0 0;
         position: relative;
+        min-height: 950px;
     }
     .page-main-devices-img{
         display: none;
@@ -1717,7 +1736,7 @@ input[type="search"]:focus::-webkit-input-placeholder{
         margin: 0;
         background-image: url("../img/iphone_in_hand.png");
         background-repeat: no-repeat;
-        background-position: left bottom;
+        background-position: center;
         background-size: 65% auto;
     }
     .page-main-devices-excellent-title{
@@ -1728,14 +1747,12 @@ input[type="search"]:focus::-webkit-input-placeholder{
         padding: 20px;
     }
     .page-main-devices-excellent-list{
-        width:40%;
         align-self: flex-end;
-        padding: 0;
-        margin: 0 0 220px 55%;
+        padding: 0 20px 0 20px;
+        margin: 520px 0 0 0;
     }
     .page-main-devices-excellent-list-item{
-        padding: 0 0 0 30px;
-        font-size: 14px;
+        padding: 0 0 10px 30px;
     }
     .page-main-statistics{
         display: none;
